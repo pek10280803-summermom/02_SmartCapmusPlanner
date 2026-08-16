@@ -76,5 +76,5 @@
 > 아래에 배포된 GitHub Pages 주소를 넣어주세요.
 
 ```
-https://<사용자이름>.github.io/<저장소이름>/
+ https://pek10280803-summermom.github.io/02_SmartCapmusPlanner/
 ```
