@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Campus Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Campus Planner</h1>
+      <p class="subtitle">할 일을 입력하고 목록에 추가해보세요.</p>
+      <p class="completion-rate" id="completion-rate">완료율: 0%</p>
+    </header>
+
+
+    <section class="add-todo">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="할 일을 입력하세요"
+      />
+
+      <div class="option-row">
+        <label for="category-select">카테고리</label>
+        <select id="category-select">
+          <option value="학과">학과</option>
+          <option value="동아리">동아리</option>
+          <option value="개인">개인</option>
+        </select>
+
+        <label for="priority-select">중요도</label>
+        <select id="priority-select">
+          <option value="상">상</option>
+          <option value="중" selected>중</option>
+          <option value="하">하</option>
+        </select>
+      </div>
+
+      <div class="option-row">
+        <label for="due-date-input">마감일</label>
+        <input type="date" id="due-date-input" />
+      </div>
+
+      <button id="add-btn">추가</button>
+    </section>
+
+
+    <section class="todo-list-section">
+      <ul id="todo-list"></ul>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
